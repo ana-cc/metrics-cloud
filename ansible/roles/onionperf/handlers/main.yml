@@ -2,3 +2,6 @@
 - name: restart onionperf
   systemd: state=restarted name=onionperf daemon_reload=yes
   become: true
+- name: restart apache2
+  systemd: state=restarted name=apache2 daemon_reload=yes
+  become: true
